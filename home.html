@@ -26,15 +26,17 @@
             left: 20px;
         }
         .mode-button {
-            width: 160px;
+            width: 120px;
             height: 120px;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
             border: none;
             cursor: pointer;
-            margin: 0 5px;
+            margin: 0; /* 去掉外边距 */
             transition: transform 0.3s;
+            background-color: transparent; /* 确保背景透明 */
+            outline: none; /* 去掉按钮选中的边框 */
         }
         .mode-button:hover {
             transform: scale(1.1);
