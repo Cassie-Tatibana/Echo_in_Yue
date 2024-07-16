@@ -45,18 +45,37 @@ body {
 
 
 
-#content {
+#title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    margin-top: 15vh; /* 页面顶部15%处 */
+    object-fit: contain;
+    max-width: 50%; 
+    height: auto;
+    margin-top: 12vh; 
+     /* 页面顶部15%处 */
 }
 
-#content img {
+#title img {
+    max-width: 100%;
+    height: auto;
+}
+#SpecAnima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    object-fit: contain;
+    max-width: 30%; 
+    height: auto;
+    margin-top: 30vh; 
+    overflow:hidden;
+
+}
+#SpecAnima img {
     max-width: 100%;
     height: auto;
 }
