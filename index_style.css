@@ -11,7 +11,7 @@ body {
     align-items: center;
 }
 
-.button-container {
+.mode-button-container {
     position: fixed;
     top: 0px;
     left: 20px;
@@ -30,8 +30,24 @@ body {
     background-color: transparent;
     outline: none;
 }
+.FullScreen-button {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    transition: transform 0.3s;
+    background-color: transparent;
+    outline: none;
+}
 
 .mode-button:hover {
+    transform: scale(1.1);
+}
+.FullScreen-button:hover {
     transform: scale(1.1);
 }
 
@@ -42,7 +58,12 @@ body {
 #night-button {
     background-image: url('image/通用/夜.png');
 }
-
+#handleFull-button {
+    background-image: url(image/通用/全屏.png);
+}
+#exitFull-button {
+    background-image: url(image/通用/退出全屏.png);
+}
 
 
 #title {

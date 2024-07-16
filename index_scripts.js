@@ -86,3 +86,29 @@ function handleFullScreen() {
         }
     }
 }
+// 退出全屏
+function exitFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    }
+}
+
+//监听window是否全屏，并进行相应的操作,支持esc键退出
+window.onresize = function() {
+    var isFull=!!(document.webkitIsFullScreen || document.mozFullScreen || 
+        document.msFullscreenElement || document.fullscreenElement
+    );//!document.webkitIsFullScreen都为true。因此用!!
+    if (isFull==false) {
+        $("#exitFullScreen").css("display","none");
+        $("#fullScreen").css("display","");
+    }else{
+        $("#exitFullScreen").css("display","");
+        $("#fullScreen").css("display","none");
+    }
+}

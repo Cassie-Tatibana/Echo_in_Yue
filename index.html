@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="index_style.css">
 </head>
 <body>
-    <div class="button-container">
+    <div class="mode-button-container">
         <button id="day-button" class="mode-button" onclick="setMode('day')" title="白天模式"></button>
         <button id="night-button" class="mode-button" onclick="setMode('night')" title="夜晚模式"></button>
-        <input type="button"  onclick="handleFullScreen()" value="全屏显示ʾ"/>
+        <button id="handleFull-button" class="FullScreen-button" onclick="handleFullScreen()" title="全屏"></button>
+        <button id="exitFull-button" class="FullScreen-button" onclick="exitFullscreen()" title="退出"></button>
+
     </div>
     <div id="title"></div>
     <div id="SpecAnima"></div>
