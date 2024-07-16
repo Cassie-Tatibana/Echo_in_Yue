@@ -56,3 +56,33 @@ setInterval(() => {
         checkTime();
     }
 }, 60000);
+
+
+//定义一个变量进行判断，默认false 非全屏状态
+var exitFullscreen = false
+// 全屏事件
+function handleFullScreen() {
+    var element = document.documentElement;
+    if(this.fullscreen) {
+        if(document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if(document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        } else if(document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if(document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    } else {
+        if(element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if(element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if(element.msRequestFullscreen) {
+            // IE11
+            element.msRequestFullscreen();
+        }
+    }
+}
