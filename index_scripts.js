@@ -112,3 +112,11 @@ window.onresize = function() {
         $("#fullScreen").css("display","none");
     }
 }
+
+function toIndex(){
+    window.location.href="Index.html";
+}
+
+function toNewpage(){
+    window.location.href="newpage.html";
+}

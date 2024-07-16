@@ -11,7 +11,13 @@ body {
     align-items: center;
 }
 
+.button-row {
+    display: flex;
+    align-items: center;
+}
+
 .mode-button-container {
+    display: inline-flex;
     position: fixed;
     top: 0px;
     left: 20px;
@@ -19,7 +25,7 @@ body {
 
 .mode-button {
     width: 120px;
-    height: 120px;
+    height: 75px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,9 +37,9 @@ body {
     outline: none;
 }
 .FullScreen-button {
-    width: 30px;
-    height: 30px;
-    background-size: contain;
+    width: 75px;
+    height: 75px;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -42,13 +48,6 @@ body {
     transition: transform 0.3s;
     background-color: transparent;
     outline: none;
-}
-
-.mode-button:hover {
-    transform: scale(1.1);
-}
-.FullScreen-button:hover {
-    transform: scale(1.1);
 }
 
 #day-button {
@@ -64,7 +63,48 @@ body {
 #exitFull-button {
     background-image: url(image/通用/退出全屏.png);
 }
-
+.right-button-container {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    display: inline-flex;
+}
+.right-button {
+    width: 150px;
+    height: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    transition: transform 0.3s;
+    background-color: transparent;
+    outline: none;
+}
+#begin-button{
+    background-image: url(image/通用/前言.png);
+}
+#us-button{
+    background-image: url(image/通用/关于我们.png);
+}
+#Enter{
+    width: 500px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    transition: transform 0.3s;
+    background-color: transparent;
+    outline: none;
+    background-image: url(image/通用/点击进入.png);
+}
+button:hover {
+    transform: scale(1.1);
+}
 
 #title {
     display: flex;
@@ -92,7 +132,7 @@ body {
     object-fit: contain;
     max-width: 30%; 
     height: auto;
-    margin-top: 30vh; 
+    margin-top: 15vh; 
     overflow:hidden;
 
 }

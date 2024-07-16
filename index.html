@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="index_style.css">
 </head>
 <body>
-    <div class="mode-button-container">
-        <button id="day-button" class="mode-button" onclick="setMode('day')" title="白天模式"></button>
-        <button id="night-button" class="mode-button" onclick="setMode('night')" title="夜晚模式"></button>
-        <button id="handleFull-button" class="FullScreen-button" onclick="handleFullScreen()" title="全屏"></button>
-        <button id="exitFull-button" class="FullScreen-button" onclick="exitFullscreen()" title="退出"></button>
-
+    <div class="button-row">
+        <span class="mode-button-container">
+            <button id="day-button" class="mode-button" onclick="setMode('day')" title="白天模式"></button>
+            <button id="night-button" class="mode-button" onclick="setMode('night')" title="夜晚模式"></button>
+            <button id="handleFull-button" class="FullScreen-button" onclick="handleFullScreen()" title="全屏"></button>
+            <button id="exitFull-button" class="FullScreen-button" onclick="exitFullscreen()" title="退出"></button>
+        </span>
+        <span class="right-button-container">
+            <button id="begin-button" class="right-button" title="序章"></button>
+            <button id="us-button" class="right-button" title="关于我们"></button>
+        </span>
     </div>
+    
     <div id="title"></div>
+    <div>
+        <button id="Enter" onclick="toNewpage()"  title="进入"></button>
+    </div>
     <div id="SpecAnima"></div>
     <script src="index_scripts.js"></script>
     
