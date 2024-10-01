@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>越音回响主页</title>
+    <link rel="shortcut icon" href="image/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index_style.css">
+</head>
+
+<body>
+    <div class="button-row">
+        <span class="mode-button-container">
+            <button id="day-button" class="mode-button" onclick="setMode('day')" title="白天模式"></button>
+            <button id="night-button" class="mode-button" onclick="setMode('night')" title="夜晚模式"></button>
+        </span>
+        <span class="right-button-container">
+            <button id="preface-button" class="right-button" onclick="toPreface()"></button>
+            <button id="us-button" class="right-button" >
+                <span id="tooltip" class="tooltip">
+                    <img src="image/general/about_us_detail.png" alt="">
+                </span>
+            </button>
+        </span>
+    </div>
+    
+    <div class="center">
+        <span id="title"></div>
+        
+    </div>
+    
+    <div class = "enter-boat-bottom">
+        <button class="Enter" onclick="toNewpage()" title="进入">
+            <img class = "enter-img" src="image/general/enter.png" alt="">
+        </button>
+        <div id="SpecAnima"> </div>
+    </div>
+    
+    <script src="index_scripts.js"></script>
+
+</body>
+
+</html>
