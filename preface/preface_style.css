@@ -1,0 +1,46 @@
+body {
+    background-image: url(image/前言背景.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; /* 禁止页面滚动 */
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    height: 70vh;
+    padding: 3vh;
+    margin-top: 10vh;
+}
+.text_box_img{
+    /* width: 80vh; */
+    height: 70vh;
+}
+
+.bottom{
+    /* height: 10vh; */
+    text-align: right; 
+}
+.back{
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image/返回.png);
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}

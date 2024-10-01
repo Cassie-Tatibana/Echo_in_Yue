@@ -41,7 +41,7 @@ body {
 
 
 #day-button {
-    background-image: url('image/general/day_mode.png');
+    background-image:  url('image/general/day_mode.png');
 }
 
 #night-button {
@@ -81,6 +81,7 @@ body {
     right: 2vh;
     z-index: 2;
   }
+  
   .tooltip img{
     visibility: hidden;
     transition: visibility 0s, opacity 0.5s ease-out;
@@ -128,6 +129,7 @@ body {
     transition: transform 0.3s;
     background-color: transparent;
     outline: none;
+    cursor: pointer;
 }
 
 .enter-img{

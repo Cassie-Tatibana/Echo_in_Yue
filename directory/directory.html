@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>目录</title>
+  <link rel="shortcut icon" href="../general_image/ico/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="directory_style.css">
+</head>
+
+<body>
+  <div id="main">
+    <!-- 图片预览 -->
+    <div id="slide-section">
+      <div id="card-section">
+        <div id="card1" class="card">
+          <div class="card-img">
+            <img src="./image/第一章胶卷.png" alt="">
+          </div>
+        </div>
+        <div id="card2" class="card">
+          <div class="card-img">
+            <img src="./image/第二章胶卷.png" alt="">
+          </div>
+        </div>
+        <div id="card3" class="card">
+          <div class="card-img">
+            <img src="./image/第三章胶卷.png" alt="">
+          </div>
+        </div>
+        <div id="card4" class="card">
+          <div class="card-img">
+            <img src="./image/第四章胶卷.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="slide-bar">
+        <div id="bar"></div>
+      </div>
+    </div>
+
+    <div class="right">
+      <!-- 目录选择 -->
+      <div id="click-section">
+        <div id="drawerboxes">
+          <div class="drawerbox active">
+            <button class="drawer-btn active" onclick="slideTo(1)">第1章水调·晨曦古吟
+
+          </div>
+          <div class="drawerbox">
+            <button class="drawer-btn" onclick="slideTo(2)">第2章桨声·人间烟火
+
+          </div>
+          <div class="drawerbox">
+            <button class="drawer-btn" onclick="slideTo(3)"> 第3章暮曲·绍风夜韵
+
+          </div>
+          <div class="drawerbox">
+            <button class="drawer-btn" onclick="slideTo(4)">第4章潮音·未来交响
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <!-- 彩蛋解锁 -->
+        <div id="easter_egg">
+          <p class="easter_egg_text">
+            0/12
+          </p>
+        </div>
+        <!-- 返回主页 -->
+        <button class="back" onclick="toIndex()">
+        </button>
+      </div>
+    </div>
+
+  </div>
+  <script src="directory_scripts.js">
+  </script>
+</body>
+
+</html>

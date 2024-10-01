@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./image/目录背景.png);
+  background-size: cover;
+  overflow: hidden;
+  /* 禁止页面滚动 */
+}
+
+#main {
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 40%;
+  height: 60%;
+}
+
+#click-section {
+
+  padding: 20px 0;
+  position: relative;
+}
+
+#drawerboxes {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.drawerbox {
+  /* height: calc(100% / 4); */
+  /* height: calc(100% / 5.5); */
+  width: 100%;
+  padding: 35px 0px;
+  position: relative;
+  z-index: 100;
+  transition: transform 0.3s;
+  /* 切换颜色,不知道能不能作用 */
+}
+
+.drawerbox.active {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
+.drawer-btn {
+  width: 100%;
+  height: 100%;
+  font: 800 50px '';
+  background-color: transparent;
+  border: none;
+  transition: background-color .5s ease-in-out;
+  color: rgb(108, 70, 41);
+  text-shadow: 4px 4px 0 white,
+    -4px -4px 0 white,
+    4px -4px 0 white,
+    -4px 4px 0 white;
+}
+
+.drawer-btn.active {
+  /* background-image: url(./img/bg.jpg); */
+  background-size: cover;
+  color: rgb(226, 166, 82);
+  text-shadow: 4px 4px 0 white,
+    -4px -4px 0 white,
+    4px -4px 0 white,
+    -4px 4px 0 white;
+}
+
+.drawer-btn:hover {
+  cursor: pointer;
+}
+
+
+#slide-section {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+#slide-bar {
+  position: absolute;
+  top: 25%;
+  right: 2vh;
+  height: 50%;
+  width: 2px;
+  background-color: rgb(223, 223, 223);
+}
+
+#bar {
+  position: absolute;
+  height: calc(100% / 4);
+  width: 5px;
+  top: 0;
+  left: -1.2px;
+  background-color: rgb(226, 166, 82);
+  transition: transform .5s ease-in-out;
+}
+
+#card-section {
+  padding-top: 25vh;
+  align-items: center;
+  object-fit: contain;
+  height: 100%;
+  width: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 5% 0;
+  color: white;
+  transition: transform 1s ease-in-out;
+
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+#easter_egg {
+  width: 24vh;
+  height: 16vh;
+  z-index: 1999;
+  background-image: url(image/彩蛋框.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: flex-end; /* 垂直对齐到下边 */
+  /* padding-bottom: 1vh;  */
+}
+
+.easter_egg_text{
+  margin-bottom: 20%;
+  font-size: 2vh;
+  color: #ffffff;
+}
+
+.bottom{
+  /* height: 10vh; */
+  display: flex;
+  text-align: right; 
+  justify-content: space-between; /* 元素分别靠左右对齐 */
+  
+}
+.back{
+  margin-top:10vh;
+  margin-right:5vh;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(image/返回.png);
+  height: 10vh;
+  width: 20vh;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

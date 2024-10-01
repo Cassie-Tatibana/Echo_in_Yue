@@ -47,10 +47,10 @@ function setMode(mode) {
 
 
 
-function toIndex(){
-    window.location.href="Index.html";
+function toDirectory(){
+    window.location.href="../directory/directory.html";
 }
 
 function toPreface(){
-    window.location.href="../前言/preface.html";
+    window.location.href="../preface/preface.html";
 }
