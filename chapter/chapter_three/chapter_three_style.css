@@ -1,0 +1,159 @@
+body {
+    background-image: url(image/背景.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* 禁止页面滚动 */
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button {
+    transition: transform 0.3s;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.interactive_components {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+}
+
+.voice {
+    z-index: 5;
+    position: absolute;
+   /* 调整位置使其在按钮上侧 */
+}
+
+.wine {
+    position: relative; /* 设置为相对定位，以便绝对定位的子元素能相对于它 */
+    padding-top: 48vh;
+    margin-left: 13vw;
+    z-index: 0;
+    width: 3vw;
+    
+}
+
+
+
+#wine_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;
+    left: -7vw;
+    top:  -15vh;  
+}
+
+.wine:hover #wine_voice img{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wine_button img {
+    width: 3vw;
+}
+
+
+
+
+.chinaware {
+    margin-top: -8vh;
+    margin-left: 72vw;
+}
+
+#chinaware_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;;
+    left: -10vw;
+    top:  -15vh;  
+    
+}
+
+.chinaware:hover #chinaware_voice img{
+    visibility: visible;
+    opacity: 1;
+}
+
+.chinaware_button img {
+    width: 12vw;
+    height: 7vh;
+}
+
+
+
+.opera {
+    margin-top: -8vh;
+    margin-left: 46vw;
+}
+
+#opera_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;
+    left: -10vw;
+    top:  -8vw; 
+    
+}
+
+.opera:hover #opera_voice img{
+    visibility: visible;
+    opacity: 1;
+}
+
+.opera_button img {
+    width: 8vw;
+    /* height: 22vh; */
+}
+
+
+.bottom{
+    height: 20vh;
+}
+
+
+.back{
+    z-index: 200;
+    border: none;
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+}
+
+.back_button{
+    z-index: 200;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image/返回.png);
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-top: 8vh;
+
+}

@@ -1,0 +1,157 @@
+body {
+    background-image: url(image/背景_不带雨版.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* 禁止页面滚动 */
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button {
+    transition: transform 0.3s;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.interactive_components {
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+    left: 50vw;
+}
+
+.voice {
+    z-index: 5;
+    position: absolute;
+   /* 调整位置使其在按钮左侧 */
+}
+
+.bell {
+    position: relative; /* 设置为相对定位，以便绝对定位的子元素能相对于它 */
+    padding-top: 35vh;
+    margin-left: 26vw;
+    z-index: 0;
+    width: 6vw;
+}
+
+
+
+#bell_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    top: 4vh;
+    height:  10vh;;
+    left:  -25vw;  
+}
+
+.bell:hover #bell_voice img{
+    visibility: visible;
+    opacity: 1;
+}
+
+.bell_button img {
+    width: 6vw;
+    height: 17vh;
+}
+
+
+
+
+.people {
+    margin-top: 4vh;
+    margin-left: 22vw;
+    width: 6vw;
+}
+
+#people_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;;
+    top: 3vh;
+    left:  -26vw;    /* 调整位置使其在按钮左侧 */
+    
+}
+
+.people:hover #people_voice img{
+    visibility: visible;
+    opacity: 1;
+}
+
+.people_button img {
+    width: 6vw;
+    height: 17vh;
+}
+
+
+
+
+.boat {
+    margin-top: 5vh;
+    margin-left: 20vw;
+    width: 25vw;
+
+}
+
+#boat_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;;
+    top: 5vh;
+    left:  -26vw;    /* 调整位置使其在按钮左侧 */
+    
+}
+
+.boat:hover #boat_voice img{
+    visibility: visible;
+    opacity: 1;
+}
+
+.boat_button img {
+    width: 25vw;
+    height: 21vh;
+}
+
+
+.back{
+    z-index: 200;
+    border: none;
+    height: 100vh;
+    width: 200vh;
+    transition: transform 0.3s;
+    margin-top: -100vh;
+}
+
+.back_button{
+    z-index: 200;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image/返回.png);
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-top: 90vh;
+    margin-left: 2vw;
+}

@@ -3,6 +3,23 @@ function toIndex() {
     window.location.href = "../index/index.html";
 }
 
+function tochapter1(){
+    window.location.href="../chapter/chapter_one/chapter_one.html";
+}
+
+function tochapter2(){
+    window.location.href="../chapter/chapter_two/chapter_two.html";
+}
+
+function tochapter3(){
+    window.location.href="../chapter/chapter_three/chapter_three.html";
+}
+
+function tochapter4(){
+    window.location.href="../chapter/chapter_four/chapter_four.html";
+}
+
+
 // 定义变量 
 let chosenSlideNumber = 1; // 当前选择的幻灯片编号 
 let offset = 0; // 幻灯片偏移量 

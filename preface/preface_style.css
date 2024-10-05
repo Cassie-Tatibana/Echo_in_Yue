@@ -1,5 +1,5 @@
 body {
-    background-image: url(image/前言背景.png);
+    background-image: url(image/背景.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,27 +8,42 @@ body {
     height: 100vh;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden; /* 禁止页面滚动 */
+    overflow: hidden;
+    /* 禁止页面滚动 */
 }
-.center{
+
+.center {
     display: flex;
     flex-direction: column;
     align-items: center;
     object-fit: contain;
-    height: 70vh;
-    padding: 3vh;
-    margin-top: 10vh;
-}
-.text_box_img{
-    /* width: 80vh; */
-    height: 70vh;
+    height: 68vh;
+    margin-top: 16.5vh;
+    margin-left: 7vw;
+    padding-right: 7vw;
 }
 
-.bottom{
-    /* height: 10vh; */
-    text-align: right; 
+.text_box {
+    width: 100%;
+    height: 70vh;
+    overflow-y: auto;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
-.back{
+
+.text_img {
+    width: 90%;
+   margin-left: 5vw;
+
+}
+
+.bottom {
+    /* height: 10vh; */
+    text-align: right;
+    margin-right: 3vw;
+}
+
+.back {
     border: none;
     background-color: transparent;
     background-size: contain;
@@ -43,4 +58,16 @@ body {
 
 button:hover {
     transform: scale(1.1);
+}
+
+
+.text_box::-webkit-scrollbar {
+    width: 0.7vw;
+}
+
+
+
+.text_box::-webkit-scrollbar-thumb {
+    background-color: rgb(220, 172, 88); 
+    border-radius: 1vw 
 }

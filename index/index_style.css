@@ -7,12 +7,15 @@ body {
     height: 100vh;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden; /* 禁止页面滚动 */
+    overflow: hidden;
+    /* 禁止页面滚动 */
 }
 
 .button-row {
-    display: flex; /* 使用 Flexbox 布局 */
-    justify-content: space-between; /* 子元素分别靠向两端 */
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    justify-content: space-between;
+    /* 子元素分别靠向两端 */
     padding: 2px;
     height: 10vh;
     width: 100%;
@@ -41,7 +44,7 @@ body {
 
 
 #day-button {
-    background-image:  url('image/general/day_mode.png');
+    background-image: url('image/general/day_mode.png');
 }
 
 #night-button {
@@ -49,12 +52,14 @@ body {
 }
 
 
+
 .right-button-container {
-    text-align: right; 
+    text-align: right;
     width: 100vh;
     top: 0px;
     right: 20px;
 }
+
 .right-button {
     width: 20%;
     height: 100%;
@@ -68,35 +73,43 @@ body {
     background-color: transparent;
     outline: none;
 }
-#preface-button{
+
+
+#fullscreenBtn {
+    background-image: url(image/general/全屏.png);
+  
+}
+#preface-button {
     background-image: url(image/general/preface.png);
 }
-#us-button{
+
+#us-button {
     background-image: url(image/general/about_us.png);
 }
+
 .tooltip {
-    
     position: absolute;
     top: 10vh;
     right: 2vh;
     z-index: 2;
-  }
-  
-  .tooltip img{
+}
+
+.tooltip img {
     visibility: hidden;
     transition: visibility 0s, opacity 0.5s ease-out;
     opacity: 0;
     width: 20vh;
     height: 20vh;
-  }
+}
 
-  #us-button:hover .tooltip img{
+#us-button:hover .tooltip img {
     visibility: visible;
-    opacity: 1; /* 完全不透明 */
-  }
+    opacity: 1;
+    /* 完全不透明 */
+}
 
 /* 固定位置固定大小 */
-.center {
+/* .center {
     height:30vh;
     display: flex;
     flex-direction: column;
@@ -105,26 +118,25 @@ body {
 }
 #title  {
     height:100%;
-    /* width: 50vh; */
+
 
 }
 #title img {
     height:100%;
-    /* width: 50vh; */
 
-}
+} */
 
-.enter-boat-bottom{
-    /* max-height: 50%;  */
-    height:60vh;
+.enter-boat-bottom {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     object-fit: contain;
+    margin-top: 30vh;
 }
 
-.Enter{
-    height:20vh;
+.Enter {
+    height: 15vh;
     border: none;
     transition: transform 0.3s;
     background-color: transparent;
@@ -132,8 +144,8 @@ body {
     cursor: pointer;
 }
 
-.enter-img{
-    height:20vh;
+.enter-img {
+    height: 15vh;
 }
 
 /* 按钮的渐变时长 */
@@ -141,12 +153,32 @@ button:hover {
     transform: scale(1.1);
 }
 
+/* 
 #SpecAnima {
     height:35vh;
     padding: 5vh;
 }
 #SpecAnima img {
-    /* width: 100%; */
-    /* height: 150%; */
     height:50vh;
+} */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-icon {
+    animation: rotate 2s linear infinite;
+    /* 动画名称 持续时间 速度曲线 是否无限循环 */
+}
+
+#soundIcon {
+    cursor: pointer;
+    height: 7vh;
+    margin-left: 2vw;
 }

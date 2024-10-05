@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>越音回响主页</title>
+    <title>越音回响</title>
     <link rel="shortcut icon" href="../general_image/ico/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="index_style.css">
 </head>
 
 <body>
+    <!-- 背景音乐 -->
+    <audio id="backgroundMusic" src="voice/00背景音.mp3" autoplay loop></audio>
     <div class="button-row">
         <span class="mode-button-container">
             <button id="day-button" class="mode-button" onclick="setMode('day')" title="白天模式"></button>
             <button id="night-button" class="mode-button" onclick="setMode('night')" title="夜晚模式"></button>
         </span>
         <span class="right-button-container">
+            <button class="right-button" id="fullscreenBtn"> </button>
             <button id="preface-button" class="right-button" onclick="toPreface()"></button>
             <button id="us-button" class="right-button" >
                 <span id="tooltip" class="tooltip">
@@ -25,18 +28,22 @@
         </span>
     </div>
     
-    <div class="center">
+    <!-- <div class="center">
         <span id="title"></div>
         
-    </div>
+    </div> -->
     
     <div class = "enter-boat-bottom">
         <button class="Enter" onclick="toDirectory()" title="进入">
             <img class = "enter-img" src="image/general/enter.png" alt="">
         </button>
-        <div id="SpecAnima"> </div>
+        <!-- <div id="SpecAnima"> </div> -->
+        
     </div>
-    
+    <div class="sound-icon-container">
+        <img class="rotate-icon" id="soundIcon" src="image/general/喇叭.png" >
+        <audio id="backgroundMusic" src="background_music.mp3" autoplay loop></audio>
+    </div>
     <script src="index_scripts.js"></script>
 
 </body>

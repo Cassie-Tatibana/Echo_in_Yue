@@ -23,14 +23,17 @@ body {
   align-items: center;
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
 .right {
   width: 40%;
   height: 60%;
 }
 
 #click-section {
-
-  padding: 20px 0;
+  padding: 2vh 0;
   position: relative;
 }
 
@@ -49,7 +52,7 @@ body {
   /* height: calc(100% / 4); */
   /* height: calc(100% / 5.5); */
   width: 100%;
-  padding: 35px 0px;
+  padding: 2vh 0vh;
   position: relative;
   z-index: 100;
   transition: transform 0.3s;
@@ -64,25 +67,25 @@ body {
 .drawer-btn {
   width: 100%;
   height: 100%;
-  font: 800 50px '';
+  font: 800 5vh '';
   background-color: transparent;
   border: none;
   transition: background-color .5s ease-in-out;
   color: rgb(108, 70, 41);
-  text-shadow: 4px 4px 0 white,
-    -4px -4px 0 white,
-    4px -4px 0 white,
-    -4px 4px 0 white;
+  text-shadow: 0.4vh 0.4vh 0 white,
+    -0.4vh -0.4vh 0 white,
+    0.4vh -0.4vh 0 white,
+    -0.4vh 0.4vh 0 white;
 }
 
 .drawer-btn.active {
   /* background-image: url(./img/bg.jpg); */
   background-size: cover;
   color: rgb(226, 166, 82);
-  text-shadow: 4px 4px 0 white,
-    -4px -4px 0 white,
-    4px -4px 0 white,
-    -4px 4px 0 white;
+  text-shadow: 0.4vh 0.4vh 0 white,
+    -0.4vh -0.4vh 0 white,
+    0.4vh -0.4vh 0 white,
+    -0.4vh 0.4vh 0 white;
 }
 
 .drawer-btn:hover {
@@ -141,6 +144,7 @@ body {
 
 }
 
+
 .card-img {
   width: 100%;
   height: 100%;
@@ -151,34 +155,57 @@ body {
   width: 100%;
 }
 
+.card_button {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  transition: transform 0.3s;
+  background-color: transparent;
+  outline: none;
+
+}
+.card_button:hover {
+  transform: scale(1.03);
+}
+
 #easter_egg {
+  margin-top: 5vh;
   width: 24vh;
   height: 16vh;
   z-index: 1999;
   background-image: url(image/彩蛋框.png);
   background-size: cover;
   display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: flex-end; /* 垂直对齐到下边 */
+  justify-content: center;
+  /* 水平居中 */
+  align-items: flex-end;
+  /* 垂直对齐到下边 */
   /* padding-bottom: 1vh;  */
 }
 
-.easter_egg_text{
+.easter_egg_text {
   margin-bottom: 20%;
   font-size: 2vh;
   color: #ffffff;
 }
 
-.bottom{
+.bottom {
   /* height: 10vh; */
   display: flex;
-  text-align: right; 
-  justify-content: space-between; /* 元素分别靠左右对齐 */
-  
+  text-align: right;
+  justify-content: space-between;
+  /* 元素分别靠左右对齐 */
+
 }
-.back{
-  margin-top:10vh;
-  margin-right:5vh;
+
+.back {
+  margin-top: 18vh;
+  margin-right: 5vh;
   border: none;
   background-color: transparent;
   background-size: contain;
@@ -191,6 +218,3 @@ body {
   cursor: pointer;
 }
 
-button:hover {
-  transform: scale(1.1);
-}

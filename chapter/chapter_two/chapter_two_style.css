@@ -1,0 +1,159 @@
+body {
+    background-image: url(image/背景.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* 禁止页面滚动 */
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button {
+    transition: transform 0.3s;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.interactive_components {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+}
+
+.voice {
+    z-index: 5;
+    position: absolute;
+    /* 调整位置使其在按钮上侧 */
+}
+
+.study {
+    position: relative;
+    /* 设置为相对定位，以便绝对定位的子元素能相对于它 */
+    padding-top: 39vh;
+    margin-left: 12vw;
+    z-index: 0;
+    width: 8vw;
+
+}
+
+
+
+#study_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;
+    left: -7vw;
+    top: -15vh;
+}
+
+.study:hover #study_voice img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.study_button img {
+    width: 8vw;
+    height: 32vh;
+}
+
+
+
+
+.Hotel {
+    margin-top: -75vh;
+    margin-left: 45vw;
+}
+
+#Hotel_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;
+    ;
+    top: 12vw;
+    left: 20vw;
+
+}
+
+.Hotel:hover #Hotel_voice img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Hotel_button img {
+    width: 55vw;
+    height: 80vh;
+}
+
+.bottom {
+    height: 20vh;
+}
+
+
+.boat {
+    margin-top: -13vh;
+    margin-left: 20vw;
+}
+
+#boat_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;
+    top: -5vw;
+
+}
+
+.boat:hover #boat_voice img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.boat_button img {
+    width: 30vw;
+    height: 22vh;
+}
+
+
+.back {
+    z-index: 200;
+    border: none;
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+}
+
+.back_button {
+    z-index: 200;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image/返回.png);
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-top: 9vh;
+
+}

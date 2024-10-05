@@ -1,0 +1,62 @@
+body {
+    background-image: url(image/04背景.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+     /* 禁止页面滚动 */
+}
+
+.scrollable_container {
+    overflow-y:auto;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    margin-right: 26vw;
+    height: 70vh;
+    overflow-y:auto;
+}
+
+.scrollable_container img {
+    width: 100%; /* 自动宽度 */
+    max-width: none; /* 确保图片不会缩放 */
+}
+
+
+
+.bottom{
+    text-align: right; 
+}
+.back{
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image/返回.png);
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-top: -3vh;
+    margin-right: 2vw;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* 整个滚动条的样式 */
+.scrollable_container::-webkit-scrollbar {
+    width: 0.7vw; /* 滚动条的宽度 */
+}
+
+
+/* 滚动条滑块的样式 */
+.scrollable_container::-webkit-scrollbar-thumb {
+    background-color: rgb(108, 70, 41); /* 滑块颜色 */
+    border-radius: 1vw /* 滑块圆角 */
+
+}

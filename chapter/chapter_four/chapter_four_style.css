@@ -1,0 +1,160 @@
+body {
+    background-image: url(image/背景.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* 禁止页面滚动 */
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button {
+    transition: transform 0.3s;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.interactive_components {
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.voice {
+    z-index: 1;
+    position: absolute;
+    /* 调整位置使其在按钮上侧 */
+}
+
+.robot {
+    position: relative;
+    /* 设置为相对定位，以便绝对定位的子元素能相对于它 */
+    margin-top: -10vh;
+    margin-left: 76vw;
+    z-index: 0;
+    width: 8vw;
+
+}
+
+
+
+#robot_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 0;
+    position: absolute;
+    height:  10vh;
+    left: -10vw;
+    bottom: -40vh;
+}
+
+.robot:hover #robot_voice img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.robot_button img {
+    width: 6vw;
+}
+
+
+
+
+.games {
+margin-top: 5vh;
+    margin-left: 33vw;
+}
+
+#games_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 0;
+    position: absolute;
+    height:  10vh;
+    top: 3vw;
+    left: 2vw;
+
+}
+
+.games:hover #games_voice img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.games_button img {
+    width: 66vw;
+}
+
+.bottom {
+    height: 20vh;
+    z-index: 2;
+}
+
+
+.subway {
+    margin-top: -55vh;
+    margin-left: 6vw;
+    width: 55vw;
+    z-index: 2;
+    position: absolute; 
+}
+
+#subway_voice img {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 10;
+    position: absolute;
+    height:  10vh;
+    top: 19vw;
+
+}
+
+.subway:hover #subway_voice img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.subway_button img {
+    width: 55vw;
+    z-index: 2;
+}
+
+
+.back {
+    z-index: 2;
+    border: none;
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+}
+
+.back_button {
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image/返回.png);
+    height: 10vh;
+    width: 20vh;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-left: 85vw;
+    margin-top: 4vh;
+}
