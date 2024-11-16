@@ -1,3 +1,12 @@
+/* 字体定义 */
+@font-face {
+  font-family: 'FZZZHU'; /* 您希望给字体起的名字 */
+  src: url('../fonts/FZZZHUNHJW.TTF') format('truetype'); /* 字体文件的路径和格式 */
+  font-weight: normal; /* 字体粗细，可以根据需要调整 */
+  font-style: normal; /* 字体风格，可以根据需要调整 */
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +14,7 @@
 }
 
 body {
+  font-family: 'FZZZHU', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +75,7 @@ button:hover {
 }
 
 .drawer-btn {
+  font-family: 'FZZCHJW-1', sans-serif;
   width: 100%;
   height: 100%;
   font: 800 5vh '';
@@ -72,12 +83,14 @@ button:hover {
   border: none;
   transition: background-color .5s ease-in-out;
   color: rgb(108, 70, 41);
-  text-shadow: 0.4vh 0.4vh 0 white,
+  /* text-shadow: 0.4vh 0.4vh 0 white,
     -0.4vh -0.4vh 0 white,
     0.4vh -0.4vh 0 white,
-    -0.4vh 0.4vh 0 white;
+    -0.4vh 0.4vh 0 white; */
 }
-
+.drawer-btn span {
+  font-family: 'FZZZHU', sans-serif;
+}
 .drawer-btn.active {
   /* background-image: url(./img/bg.jpg); */
   background-size: cover;

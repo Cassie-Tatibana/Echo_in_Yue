@@ -1,4 +1,15 @@
+/* 字体定义 */
+@font-face {
+    font-family: 'FZZZHU'; /* 您希望给字体起的名字 */
+    src: url('../fonts/FZZZHUNHJW.TTF') format('truetype'); /* 字体文件的路径和格式 */
+    font-weight: normal; /* 字体粗细，可以根据需要调整 */
+    font-style: normal; /* 字体风格，可以根据需要调整 */
+}
+
+
 body {
+    font-family: 'FZZZHU', sans-serif;
+     /* 第二个参数是回退字体 */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -60,14 +71,20 @@ body::before {
     border-radius: 1vh;
     height: 5vh;
     width: 20vw;
-    padding-left: 8vw;
+    padding-left: 10vw;
+    
 }
 
 input:focus {
-    outline: 2px solid rgb(226, 166, 82);
+    outline: none;
+    /* outline: 2px solid rgb(226, 166, 82); */
 }
 
-
+input::placeholder {
+    font-family: 'FZZZHU', sans-serif;
+    /* color: #999; */
+     /* 可以根据需要调整颜色 */
+}
 
 .login-container button {
     margin-top: 4vh;
