@@ -12,13 +12,12 @@ body {
 
 .scrollable_container {
     overflow-y:auto;
-    margin-top: 20vh;
-    margin-left: 10vw;
+    margin-top: 22vh;
+    margin-left: 12vw;
     margin-right: 26vw;
-    height: 70vh;
+    height: 64vh;
     overflow-y:auto;
 }
-
 .scrollable_container img {
     width: 100%; /* 自动宽度 */
     max-width: none; /* 确保图片不会缩放 */
@@ -27,7 +26,8 @@ body {
 
 
 .bottom{
-    text-align: right; 
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: space-between; /* 两端对齐 */
 }
 .back{
     border: none;
@@ -40,7 +40,7 @@ body {
     width: 20vh;
     transition: transform 0.3s;
     cursor: pointer;
-    margin-top: -3vh;
+    margin-top: 1vh;
     margin-right: 2vw;
 }
 
@@ -59,4 +59,24 @@ button:hover {
     background-color: rgb(108, 70, 41); /* 滑块颜色 */
     border-radius: 1vw /* 滑块圆角 */
 
+}
+
+#soundIcon {
+    cursor: pointer;
+    height: 7vh;
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-icon {
+    animation: rotate 2s linear infinite; /* 动画名称 持续时间 速度曲线 是否无限循环 */
 }

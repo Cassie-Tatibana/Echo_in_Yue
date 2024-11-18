@@ -187,6 +187,8 @@ button:hover {
 }
 
 #easter_egg {
+  /* 先透明 */
+  opacity:0; 
   margin-top: 5vh;
   width: 24vh;
   height: 16vh;
