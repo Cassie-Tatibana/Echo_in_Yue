@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D</title>
+    <link rel="stylesheet" href="3D.css">
+    <style>
+        /* 设置html和body的基本样式 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            position: relative; /* 确保子元素的绝对定位基于body */
+        }
+
+        /* 设置iframe的位置和样式 */
+        iframe {
+            width: 95%; /* 根据需要调整宽度 */
+            height: 95%; /* 根据需要调整高度 */
+            border: none; /* 去除边框 */
+            background: transparent; /* 设置背景透明 */
+            position: fixed; /* 固定定位，始终在视窗的指定位置 */
+            bottom: -20vh; /* 距离底部的距离 */
+            right: -15vh; /* 距离右侧的距离 */
+            z-index: 1000; /* 确保iframe位于其他元素之上 */
+        }
+    </style>
+</head>
+<body>
+    <iframe src="3D_boat.html" title="3D乌篷船"></iframe>
+    <div class = 'buttom'>
+        <button class = 'back_button'  onclick="toDirectory()"></button>
+        <span class = 'note'>*此动画模型大小颜色仅作展示用，仅供参考</span>
+    </div>
+    <script src="3D.js">
+  </script>
+</body>
+</html>

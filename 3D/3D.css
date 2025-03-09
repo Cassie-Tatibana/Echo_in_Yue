@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 字体定义 */
+@font-face {
+  font-family: 'FZZZHU'; /* 您希望给字体起的名字 */
+  src: url('../fonts/FZZZHUNHJW.TTF') format('truetype'); /* 字体文件的路径和格式 */
+  font-weight: normal; /* 字体粗细，可以根据需要调整 */
+  font-style: normal; /* 字体风格，可以根据需要调整 */
+}
+
+body {
+  font-family: 'FZZZHU', sans-serif;
+  background-image: url('image/底图.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow: hidden; /* 禁止页面滚动 */
+}
+
+button {
+  transition: transform 0.3s;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
+
+.back_button {
+  z-index: 200;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(image/返回.png);
+  height: 10vh;
+  width: 20vh;
+  margin-left: 5vh;
+  transition: transform 0.3s;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.buttom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between; /* 左右对齐 */
+  display: flex;
+}
+
+.note{
+  color: rgb(108, 70, 41);
+  margin-top: 3vh;
+  margin-right: 1vh;
+}
