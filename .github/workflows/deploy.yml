@@ -12,17 +12,22 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Configure Aliyun CLI
-        uses: aliyun/oss-cli@v1.0.0
-        with:
-          access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
-          access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+      - name: Install ossutil
+        run: |
+          # 下载阿里云官方 ossutil（Linux 64位版本）
+          wget https://gosspublic.alicdn.com/ossutil/1.7.14/ossutil64
+          chmod +x ossutil64
+          sudo mv ossutil64 /usr/local/bin/ossutil
+
+      - name: Configure ossutil
+        env:
+          ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+        run: |
+          # 配置访问密钥
+          ossutil config -i $ALIYUN_ACCESS_KEY_ID -k $ALIYUN_ACCESS_KEY_SECRET -e oss-cn-hangzhou.aliyuncs.com
 
       - name: Sync Files to OSS
         run: |
+          # 同步文件到 OSS（替换为你的 Bucket 名称）
           ossutil cp -rf ./ oss://yueyinhuixiang/ --endpoint=oss-cn-hangzhou.aliyuncs.com
-          # 使用 ossutil 工具同步本地文件到 OSS Bucket
-          # 替换以下参数：
-          # your-bucket-name: 你的 Bucket 名称
-          # your-bucket-endpoint: 你的 Bucket 地域节点（如 oss-cn-hangzhou.aliyuncs.com）
-          ossutil cp -rf ./ oss://your-bucket-name/ --endpoint=your-bucket-endpoint
