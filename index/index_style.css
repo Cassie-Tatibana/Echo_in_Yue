@@ -153,14 +153,31 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* 
+
 #SpecAnima {
     height:35vh;
-    padding: 5vh;
+    padding: 15vh;
+    /* 设置旋转中心位于元素上方 */
+    transform-origin: 50% -10px; /* 水平居中，垂直向上偏移20px *
+    /* 动画  名称  时长  ease-in-out是两头慢，中间快 infinite就是无限次运动 alertnate是反向运行动画 */
+	animation: move 2s ease-in-out infinite alternate;
 }
+
+/* 下面定义两个动画 */
+@keyframes move {
+	0% {
+		transform: rotate(-4deg);
+	}
+	100% {
+		/* 顺时针旋转90度 */
+		transform: rotate(2deg);
+	}
+}
+
 #SpecAnima img {
     height:50vh;
-} */
+    margin-bottom: -5vh;
+}
 
 @keyframes rotate {
     from {

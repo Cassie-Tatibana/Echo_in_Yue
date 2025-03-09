@@ -3,6 +3,10 @@ function toIndex() {
     window.location.href = "../index/index.html";
 }
 
+function to3D(){
+    window.location.href="../3D/3D.html";
+}
+
 function tochapter1(){
     window.location.href="../chapter/chapter_one/chapter_one.html";
 }

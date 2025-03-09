@@ -13,9 +13,9 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 function setMode(mode) {
     const body = document.body;
     // const titleDiv = document.getElementById('title');
-    // const SpecAnimaDiv = document.getElementById('SpecAnima');
+    const SpecAnimaDiv = document.getElementById('SpecAnima');
     // titleDiv.innerHTML = '';
-    // SpecAnimaDiv.innerHTML = '';
+    SpecAnimaDiv.innerHTML = '';
     if (mode === 'day') {
         body.style.backgroundImage = "url('image/day/day_background.png')";
 
@@ -26,7 +26,7 @@ function setMode(mode) {
         img2.src = 'image/day/day_boat.png'; 
         img2.alt = 'Boat';
         // titleDiv.appendChild(img1);
-        // SpecAnimaDiv.appendChild(img2);
+        SpecAnimaDiv.appendChild(img2);
         
     } else {
         body.style.backgroundImage = "url('image/night/night_background.png')";

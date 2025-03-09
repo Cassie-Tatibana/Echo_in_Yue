@@ -233,3 +233,17 @@ button:hover {
   cursor: pointer;
 }
 
+.Boat {
+  margin-top: 18vh;
+  margin-right: 5vh;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(image/乌篷船图标.png);
+  height: 10vh;
+  width: 20vh;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
